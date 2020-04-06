@@ -1,13 +1,8 @@
-pragma solidity ^0.5.2;
+pragma solidity 0.5.4;
 
 contract Register {
-    address public owner;
     string private info;
 
-    constructor() public {
-        owner = msg.sender;
-    }
-    
     function setInfo(string memory _info) public {
         info = _info;
     }
@@ -15,5 +10,4 @@ contract Register {
     function getInfo() public view returns (string memory) {
         return info;
     }
-        
 }

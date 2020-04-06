@@ -1,12 +1,14 @@
+# Register dapp - ethers.js
 
-Publish smart contract
+Deploy smart contract
 
-At index.js
+At index.js, update var contractAddress
 
-Update contractAddress
+```shell
+npm install
 
-Run 
-`node server.js`
+node server.js
+```
 
 Using ethers.js from cdn: https://cdn.ethers.io/scripts/ethers-v4.min.js
 

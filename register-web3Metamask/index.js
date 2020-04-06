@@ -1,7 +1,6 @@
 // Source code to interact with smart contract
 
 //connection with node
-//var web3 = new Web3(new Web3.providers.HttpProvider('https://public-node.testnet.rsk.co:4444/'));
 if (window.ethereum) {
   window.web3 = new Web3(window.ethereum)
   window.ethereum.enable()
@@ -17,7 +16,7 @@ console.log (window.web3.currentProvider)
 
 // contractAddress and abi are setted after contract deploy
 var contractAddress = '0x47Ae7e35eD0346d0d7aB0c4894e35AcfCd724663';
-var abi = JSON.parse( '[{"constant":true,"inputs":[],"name":"getInfo","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_info","type":"string"}],"name":"setInfo","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]' );
+var abi = JSON.parse( '[{"constant":true,"inputs":[],"name":"getInfo","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_info","type":"string"}],"name":"setInfo","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]' );
 
 //contract instance
 contract = new web3.eth.Contract(abi, contractAddress);
