@@ -15,7 +15,7 @@ console.log (window.web3.currentProvider)
 
 
 // contractAddress and abi are setted after contract deploy
-var contractAddress = '0x47Ae7e35eD0346d0d7aB0c4894e35AcfCd724663';
+var contractAddress = '0xA6489eB7f0DaE73EC8F0Ee973a25192735a15104';
 var abi = JSON.parse( '[{"constant":true,"inputs":[],"name":"getInfo","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_info","type":"string"}],"name":"setInfo","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]' );
 
 //contract instance
@@ -40,6 +40,7 @@ web3.eth.getAccounts(function(err, accounts) {
 
 //Smart contract functions
 function registerSetInfo() {
+  console.log('Account: ' + account);
   info = $("#newInfo").val();
   contract.methods.setInfo (info).send( {from: account}).then( function(tx) { 
     console.log("Transaction: ", tx); 

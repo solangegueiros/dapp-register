@@ -6,7 +6,7 @@ var accounts;
 var account;
 
 // Variáveis preenchidas a partir da publicação do contrato
-var contractAddress = '0x47ae7e35ed0346d0d7ab0c4894e35acfcd724663';
+var contractAddress = '0xebc9e7f09859df585734e106fc9c06fa35793ba0';
 var abi = JSON.parse( '[{"constant":true,"inputs":[],"name":"getInfo","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_info","type":"string"}],"name":"setInfo","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]' );
 
 

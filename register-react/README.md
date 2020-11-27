@@ -1,7 +1,12 @@
 # Register dapp - truffle and react
 
+
+Testing locally
+
 ```shell
-truffle migrate
+
+truffle develop
+migrate
 
 cd app
 
@@ -9,7 +14,4 @@ npm install
 
 npm start
 ```
-
-
-
 

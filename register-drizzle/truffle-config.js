@@ -4,6 +4,9 @@ module.exports = {
   contracts_build_directory: path.join(__dirname, "app/src/contracts"), 
 
   networks: {
+    develop: {
+      port: 8545
+    },    
     development: {
       host: "127.0.0.1",
       port: 8545,

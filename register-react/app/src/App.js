@@ -75,7 +75,7 @@ class App extends Component {
       <div>
         <div className="row text-center">
           <h1>Register using React</h1>
-          <p> Informação: { this.state.info } </p>
+          <p> Info: { this.state.info } </p>
           <hr/>            
           <br/>
         </div>
