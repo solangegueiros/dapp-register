@@ -1,11 +1,8 @@
 {
-  "name": "register-drizzle",
+  "name": "register",
   "version": "1.0.0",
-  "description": "",
-  "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "Register - example Ethereum solidity smart contract and frontend",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,11 +11,12 @@
     "smart contracts",
     "ethereum",
     "solidity",
-    "web3", 
-    "react",
-    "truffle",
-    "drizzle"
+    "web3"
   ],
   "author": "Solange Gueiros <solangegueiros@gmail.com> (https://solange.dev)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "web3": "^1.2.6"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "name": "drizzle-box",
   "version": "1.0.0",
-  "description": "",
+  "description": "Register - example Ethereum solidity smart contract and frontend",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
@@ -13,9 +13,18 @@
     "type": "git",
     "url": "git+https://github.com/truffle-box/drizzle-box.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "blockchain",
+    "smart contracts",
+    "ethereum",
+    "solidity",
+    "web3", 
+    "react",
+    "truffle",
+    "drizzle"
+  ],
+  "author": "Solange Gueiros <solangegueiros@gmail.com> (https://solange.dev)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/truffle-box/drizzle-box/issues"
   },
