@@ -1,4 +1,7 @@
-provider = new ethers.providers.JsonRpcProvider()
+//import { ethers } from 'https://cors-anywhere.herokuapp.com/https://cdn.ethers.io/lib/ethers-5.0.esm.min.js';
+
+let urlProvider = "http://localhost:8545";
+const provider = new ethers.providers.JsonRpcProvider(urlProvider);
 signer = provider.getSigner(0);
 
 // Variáveis preenchidas a partir da publicação do contrato
