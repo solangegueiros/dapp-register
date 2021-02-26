@@ -2,7 +2,14 @@
   "name": "register-app",
   "version": "1.0.0",
   "description": "Register - example Ethereum solidity smart contract and frontend",
-  "keywords": ["blockchain", "smart contracts", "ethereum", "solidity", "web3", "truffle"],
+  "keywords": [
+    "blockchain",
+    "smart contracts",
+    "ethereum",
+    "solidity",
+    "web3",
+    "truffle"
+  ],
   "author": "Solange Gueiros <solangegueiros@gmail.com> (https://solange.dev)",
   "license": "MIT",
   "dependencies": {

@@ -1,9 +1,22 @@
+# Register dapp - Drizzle showing events
 
-## Available Scripts
+> You need to deploy this version of `Register.sol` because it has the event.
 
-In the project directory, you can run:
+Truffle is configured to deploy on Goerli network.
 
-### `npm start`
+Update your mnemonic in `.secret`
+
+Run
+
+```shell
+truffle migrate --network goerli
+
+cd app
+
+npm install
+
+npm start
+```
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

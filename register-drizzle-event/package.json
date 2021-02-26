@@ -18,7 +18,7 @@
     "smart contracts",
     "ethereum",
     "solidity",
-    "web3", 
+    "web3",
     "react",
     "truffle",
     "drizzle"
@@ -29,6 +29,7 @@
     "url": "https://github.com/truffle-box/drizzle-box/issues"
   },
   "homepage": "https://github.com/truffle-box/drizzle-box#readme",
-  "dependencies": {    
+  "dependencies": {
+    "@truffle/hdwallet-provider": "1.2.2"
   }
 }

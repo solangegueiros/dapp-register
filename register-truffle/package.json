@@ -22,5 +22,8 @@
   "devDependencies": {
     "lite-server": "2.5.4",
     "minimist": "1.2.5"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "1.2.2"
   }
 }

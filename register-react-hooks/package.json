@@ -12,5 +12,8 @@
   },
   "keywords": ["blockchain", "smart contracts", "ethereum", "solidity", "web3", "truffle"],
   "author": "Solange Gueiros <solangegueiros@gmail.com> (https://solange.dev)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "1.2.2"
+  }  
 }

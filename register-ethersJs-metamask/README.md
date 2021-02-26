@@ -1,6 +1,6 @@
-# Register dapp - ethers.js
+# Register dapp - ethers.js connected to web3 injected
 
-Deploy smart contract
+Deploy the smart contract
 
 At index.js, update var contractAddress
 
@@ -10,7 +10,6 @@ npm install
 node server.js
 ```
 
-Using ethers.js from cdn: https://cdn.ethers.io/scripts/ethers-v4.min.js
+> Note
+> Using ethers.js installed at project: `npm install --save ethers`
 
-ToDo:
-- Using ethers.js installed at project: `npm install --save ethers`
