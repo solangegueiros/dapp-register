@@ -1,0 +1,12 @@
+<div id="spinner" class="@SetIsActiveClass()">
+    <div class="spinner-border"></div>
+</div>
+
+@code {
+    [Parameter] public bool IsActive { get; set; } = false;
+
+    public string SetIsActiveClass()
+    {
+        return (IsActive) ? "" : "hidden";
+    }
+}

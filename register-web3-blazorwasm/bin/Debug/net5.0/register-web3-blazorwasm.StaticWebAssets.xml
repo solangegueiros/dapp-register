@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\ETH\dapp-register\register-web3-blazorwasm\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\ETH\dapp-register\register-web3-blazorwasm\obj\Debug\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>

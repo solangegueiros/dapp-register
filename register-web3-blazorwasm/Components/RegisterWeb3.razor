@@ -1,0 +1,80 @@
+<Spinner IsActive="isLoading" />
+
+<div class="row">
+    <div class="col-4">
+        <h3 class="sub-header">Set information</h3>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="newInfo" @bind-value="@value" @bind-value:event="oninput">
+            <button class="btn btn-outline-secondary" type="button" @onclick="(e => RegisterSetInfo())">Set</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <h3 class="sub-header">Get last information saved</h3>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="lastInfo" readonly value="@result">
+            <button class="btn btn-outline-secondary" type="button" @onclick="(e => RegisterGetInfo())">Get</button>
+        </div>
+    </div>
+</div>
+
+@using Microsoft.JSInterop
+
+@code {
+    [Inject] IJSRuntime JSRuntime { get; set; }
+    private Task<IJSObjectReference> _module;
+    private Task<IJSObjectReference> Module => _module ??= JSRuntime.InvokeAsync<IJSObjectReference>("import", "./js/RegisterWeb3.js").AsTask();
+    private string value = ""; 
+    private string result = "";
+    private bool isLoading = false;
+    private object dotNetReference;
+
+    protected override void OnInitialized()
+    {
+        dotNetReference = DotNetObjectReference.Create(this);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var module = await Module;
+            await module.InvokeVoidAsync("Init");
+        }
+    }
+
+    public async void RegisterSetInfo()
+    {
+        isLoading = true;
+        StateHasChanged();
+        
+        var module = await Module;
+        await module.InvokeVoidAsync("RegisterSetInfo", value, dotNetReference);
+    }
+
+    [JSInvokable("RegisterSetInfoCallback")]
+    public void RegisterSetInfoCallback(bool isSuccess) 
+    {
+        if (isSuccess) {
+            value = "";
+        }
+
+        isLoading = false;
+        StateHasChanged();
+    }
+
+    public async void RegisterGetInfo()
+    {
+        var module = await Module;
+        await module.InvokeVoidAsync("RegisterGetInfo", dotNetReference);
+    }
+
+    [JSInvokable("RegisterGetInfoCallback")]
+    public void RegisterGetInfoCallback(string info) 
+    {
+        result = info;
+        StateHasChanged();
+    }
+}
