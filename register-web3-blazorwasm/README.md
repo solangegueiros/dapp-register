@@ -3,5 +3,7 @@
 
 ### How to run it
 
-Inside the folder register/web3-blazorwasm, run the command:
+Inside the folder register-web3-blazorwasm, run the command:
 ´´´dotnet run´´´
+
+Author: @welisonmenezes
