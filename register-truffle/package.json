@@ -21,7 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "lite-server": "2.5.4",
-    "minimist": "1.2.5"
+    "minimist": "1.2.6"
   },
   "dependencies": {
     "@truffle/hdwallet-provider": "1.2.2"
