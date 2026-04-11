@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//tmp/sol-token-shop/frontend/src/components/**)",
+      "Read(//tmp/sol-token-shop/frontend/src/hooks/**)",
+      "Read(//tmp/sol-token-shop/frontend/src/contracts/**)",
+      "Read(//tmp/sol-token-shop/frontend/src/**)",
+      "Read(//tmp/sol-token-shop/frontend/**)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx vite:*)",
+      "Bash(curl -s http://localhost:5173)"
+    ],
+    "additionalDirectories": [
+      "c:\\CL\\DAPPS\\dapp-register\\frontend\\src"
+    ]
+  }
+}
