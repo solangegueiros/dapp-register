@@ -51,6 +51,15 @@ npm run dev
 
 ## Production - Publish
 
+On frontend folder
+
+```cmd
+cd frontend
+```
+Execute 
+
 ```cmd
 npm run build
 ```
+
+Use the folder **dist**
